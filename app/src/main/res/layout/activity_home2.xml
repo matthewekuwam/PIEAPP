@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".HomeActivity2">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="250dp"
+           android:layout_marginStart="16dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="16dp"
+           android:layout_marginRight="16dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+
+               android:orientation="vertical" >
+
+
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="170dp"
+                   android:scaleType="centerCrop"
+                   android:src="@drawable/hostel" />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:id="@+id/tvname"
+                   android:text="HOSTELS AND ROOMS"
+                   android:textSize="28sp"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:text="Affodable House" />
+
+
+           </LinearLayout>
+
+
+       </androidx.cardview.widget.CardView>
+       <com.google.android.gms.ads.AdView
+           android:id="@+id/adView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           app:adSize="BANNER"
+           android:layout_gravity="center"
+           app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent" />
+
+
+       <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="horizontal"
+          android:layout_height="wrap_content">
+          <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+              android:layout_width="match_parent"
+              app:cardCornerRadius="20dp"
+              app:cardElevation="15dp"
+              android:layout_margin="6dp"
+              android:id="@+id/card_about"
+              android:layout_weight="1"
+              app:cardPreventCornerOverlap="true"
+              android:layout_height="150dp">
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                  <ImageView
+                      android:id="@+id/ivabout"
+                      android:layout_width="match_parent"
+                      android:layout_height="120dp"
+                      android:padding="1dp"
+
+                      android:src="@drawable/besitter" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/ivabout"
+                      android:gravity="center"
+                      android:text="Bedsiter"
+                      android:textSize="17sp"
+                      android:textStyle="bold" />
+
+
+              </RelativeLayout>
+
+          </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+          <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+              android:layout_width="match_parent"
+              app:cardCornerRadius="20dp"
+              app:cardElevation="15dp"
+              android:layout_margin="6dp"
+              android:id="@+id/card_causes"
+              android:layout_weight="1"
+              app:cardPreventCornerOverlap="true"
+              android:layout_height="150dp">
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                  <ImageView
+                      android:id="@+id/ivCauses"
+                      android:layout_width="match_parent"
+                      android:layout_height="120dp"
+                      android:padding="1dp"
+                      android:src="@drawable/twobedroom" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/ivCauses"
+                      android:gravity="center"
+                      android:text="two bedroom"
+                      android:textSize="17sp"
+                      android:textStyle="bold" />
+
+
+              </RelativeLayout>
+
+          </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+      </LinearLayout>
+       <com.denzcoskun.imageslider.ImageSlider
+           android:id="@+id/image_slider"
+           android:layout_width="match_parent"
+           android:layout_height="250dp"
+           android:layout_margin="6dp"
+           app:iss_auto_cycle="true"
+           app:iss_period="1000"
+           app:iss_delay="0"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:layout_height="wrap_content">
+           <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+               android:layout_width="match_parent"
+               app:cardCornerRadius="20dp"
+               app:cardElevation="15dp"
+               android:layout_margin="6dp"
+               android:id="@+id/card_symptoms"
+               android:layout_weight="1"
+               app:cardPreventCornerOverlap="true"
+               android:layout_height="150dp">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <ImageView
+                       android:id="@+id/ivsymptoms"
+                       android:layout_width="match_parent"
+                       android:layout_height="120dp"
+                       android:padding="10dp"
+                       android:src="@drawable/threebedroom" />
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/ivsymptoms"
+                       android:gravity="center"
+                       android:text="3 bedroom house"
+                       android:textSize="17sp"
+                       android:textStyle="bold" />
+
+
+               </RelativeLayout>
+
+           </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+           <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+               android:layout_width="match_parent"
+               app:cardCornerRadius="20dp"
+               app:cardElevation="15dp"
+               android:layout_margin="6dp"
+               android:id="@+id/card_prevention"
+               android:layout_weight="1"
+               app:cardPreventCornerOverlap="true"
+               android:layout_height="150dp">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <ImageView
+                       android:id="@+id/ivprevention"
+                       android:layout_width="match_parent"
+                       android:layout_height="120dp"
+                       android:padding="10dp"
+                       android:src="@drawable/twoedroomwithdinning" />
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/ivprevention"
+                       android:gravity="center"
+                       android:text="2 bedroom,dinning hall"
+                       android:textSize="17sp"
+                       android:textStyle="bold" />
+
+
+               </RelativeLayout>
+
+           </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:layout_height="wrap_content">
+           <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+               android:layout_width="match_parent"
+               app:cardCornerRadius="20dp"
+               app:cardElevation="15dp"
+               android:layout_margin="6dp"
+               android:id="@+id/card_toll_free"
+               android:layout_weight="1"
+               app:cardPreventCornerOverlap="true"
+               android:layout_height="150dp">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <ImageView
+                       android:id="@+id/ivtollfree"
+                       android:layout_width="match_parent"
+                       android:layout_height="120dp"
+                       android:padding="10dp"
+                       android:src="@drawable/tollfree" />
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/ivtollfree"
+                       android:gravity="center"
+                       android:text="find us"
+                       android:textSize="17sp"
+                       android:textStyle="bold" />
+
+
+               </RelativeLayout>
+
+           </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+           <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+               android:layout_width="match_parent"
+               app:cardCornerRadius="20dp"
+               app:cardElevation="15dp"
+               android:layout_margin="6dp"
+               android:id="@+id/card_location"
+               android:layout_weight="1"
+               app:cardPreventCornerOverlap="true"
+               android:layout_height="150dp">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <ImageView
+                       android:id="@+id/ivlocation"
+                       android:layout_width="match_parent"
+                       android:layout_height="120dp"
+                       android:padding="10dp"
+                       android:src="@drawable/location" />
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:text="location"
+                       android:textSize="17sp"
+                       android:gravity="center"
+                       android:layout_below="@+id/ivlocation"
+                       android:textStyle="bold"
+                       android:layout_height="wrap_content"/>
+
+
+               </RelativeLayout>
+
+           </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+       </LinearLayout>
+
+
+
+
+
+   </LinearLayout>
+</ScrollView>
